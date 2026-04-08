@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  
+  --color-brand-green: #1a4d2e;
+  --color-brand-gold: #c9a03d;
+  --color-brand-gold-dark: #b08d35;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-black bg-white;
+  }
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #c9a03d 0%, #e5c167 100%);
+}
+
+.green-gradient {
+  background: linear-gradient(135deg, #1a4d2e 0%, #2a6d45 100%);
+}
